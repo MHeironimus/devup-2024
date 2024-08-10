@@ -1,0 +1,40 @@
+{
+  "name": "bowling-kata",
+  "version": "1.0.4",
+  "description": "Package containing a simple bowling kata.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MHeironimus/devup-2024.git"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "start": "echo \"Not currently available\" && exit 1",
+    "build": "tsc",
+    "test": "jest",
+    "test-mutation": "stryker run"
+  },
+  "author": "Matthew Heironimus",
+  "license": "ISC",
+  "devDependencies": {
+    "@stryker-mutator/core": "^8.4.0",
+    "@stryker-mutator/jest-runner": "^8.4.0",
+    "@stryker-mutator/typescript-checker": "^8.4.0",
+    "@types/jest": "^29.5.12",
+    "jest": "29.7.0",
+    "ts-jest": "29.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "jest": {
+    "clearMocks": true,
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageProvider": "v8",
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/"
+    ]
+  }
+}
